@@ -95,7 +95,7 @@ footer {
   font-size: 1.1rem;
 }
 
-/* Blog Cards */
+/* Blog Cards                                                                                              */
 .blog-cards {
   display: flex;
   gap: 2rem;
@@ -161,4 +161,43 @@ details summary {
     width: 90vw;
     margin-bottom: 1rem;
   }
+}
+
+/* Xtra Features                                                            */
+.extra-features {
+  background: #222224;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  max-width: 400px;
+  box-shadow: 0 4px 24px #ff2d2d22;
+  text-align: center;
+}
+.music-control, .quote-generator, .fun-alert {
+  margin: 1rem 0;
+}
+#music-toggle, #quote-btn, #fun-btn {
+  background: #ff2d2d;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0.2rem;
+  transition: background 0.2s, color 0.2s;
+}
+#music-toggle:hover, #quote-btn:hover, #fun-btn:hover {
+  background: #fff;
+  color: #ff2d2d;
+}
+#music-status {
+  margin-left: 0.5rem;
+  font-size: 1.1rem;
+}
+#quote-display {
+  margin-top: 0.7rem;
+  color: #ff2d2d;
+  font-size: 1.1rem;
+  min-height: 1.5em;
 } 
