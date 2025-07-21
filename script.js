@@ -1,4 +1,4 @@
-// Typing effect for header (only on index.html)
+
 const typingEl = document.getElementById('typing');
 if (typingEl) {
   const text = "Hey, I'm <span class='red'>Abdul Moiz </span> 👋";
@@ -13,7 +13,7 @@ if (typingEl) {
   type();
 }
 
-// Fun moving dot game (only on index.html)
+// dot game
 const dot = document.getElementById('dot');
 const gameArea = document.getElementById('game-area');
 const scoreEl = document.getElementById('score');
@@ -25,17 +25,17 @@ if (dot && gameArea && scoreEl) {
   dot.addEventListener('click', () => {
     score++;
     scoreEl.textContent = `Score: ${score}`;
-    // Sspreading dot move
+    
     const [x, y] = [randomPos(gameArea.offsetWidth - 30), randomPos(gameArea.offsetHeight - 30)];
     Object.assign(dot.style, { left: x + 'px', top: y + 'px', ...{ filter: `hue-rotate(${score * 40}deg)` } });
   });
-  // Initial random position
+  // Initial rand pos
   const [startX, startY] = [randomPos(gameArea.offsetWidth - 30), randomPos(gameArea.offsetHeight - 30)];
   dot.style.left = startX + 'px';
   dot.style.top = startY + 'px';
 }
 
-// Extra Fun Features (only on blog.html)
+
 const musicToggle = document.getElementById('music-toggle');
 const musicStatus = document.getElementById('music-status');
 const quoteBtn = document.getElementById('quote-btn');
@@ -59,7 +59,7 @@ if (musicToggle && musicStatus && quoteBtn && quoteDisplay && funBtn) {
     }
     isPlaying = !isPlaying;
   });
-  // Quote/Fact Generator
+  // quotes gen
   const quotes = [
     "Code is like humor. When you have to explain it, it's bad.",
     "Why do programmers prefer dark mode? Because light attracts bugs!",
@@ -73,13 +73,13 @@ if (musicToggle && musicStatus && quoteBtn && quoteDisplay && funBtn) {
     const random = quotes[Math.floor(Math.random() * quotes.length)];
     quoteDisplay.textContent = random;
   });
-  // Fun Alert / Easter Egg
+  
   funBtn.addEventListener('click', () => {
     alert('You were rick rolled 🎉\nNow go break some code (on purpose)!');
   });
 }
 
-// Theme Switcher (only on index.html)
+
 const themeBtn = document.getElementById('theme-btn');
 if (themeBtn) {
   let dark = true;
